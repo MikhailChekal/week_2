@@ -1,4 +1,5 @@
 import turtle
+turtle.tracer(0)
 
 turtle.shape('turtle')
 turtle.speed(10)
@@ -19,7 +20,7 @@ def circle(number, color):
 
 def semicircle(number):
     turtle.color('red')
-    for i in range(18):
+    for i in range(17):
         turtle.left(10)
         turtle.forward(number * 2)
 
@@ -54,5 +55,7 @@ turtle.penup()
 turtle.goto(-50, -120)
 turtle.right(90)
 turtle.pendown()
-
 semicircle(4)
+
+turtle.tracer(1)
+turtle.mainloop()
